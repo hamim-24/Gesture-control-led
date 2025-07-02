@@ -1,5 +1,5 @@
 import cv2
-#import controller as cnt
+import controller as cnt
 from cvzone.HandTrackingModule import HandDetector
 WIDTH       = 1040
 HEIGHT      = 600
@@ -23,13 +23,13 @@ while True:
         lmList = hands[0]
         fingerUp = detector.fingersUp(lmList)
 
-        # print(fingerUp)
+        print(fingerUp)
         count = 0
-        for count in range(5):
-            if fingerUp[count] == 1:
-                count += 1
+        for i in range(0,5):
+            if fingerUp[i] == 1:
+                count += 1      
 
-        #cnt.led(fingerUp)
+        cnt.led(fingerUp)
         cv2.putText(frame, f'Finger count: {count}', (0, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 1, cv2.LINE_AA)
         
         cnt.reset_leds()

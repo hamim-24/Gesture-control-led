@@ -1,4 +1,3 @@
-
 import pyfirmata
 # pyfirmata for arduino pin
 # pyserial for serial monitor
