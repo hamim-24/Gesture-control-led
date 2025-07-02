@@ -1,5 +1,7 @@
 
 import pyfirmata
+# pyfirmata for arduino pin
+# pyserial for serial monitor
 
 comport = '/dev/cu.usbmodem101'
 

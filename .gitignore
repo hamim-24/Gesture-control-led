@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# VS Code project settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Environment files
+.env
+*.env
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+
+# Logs
+*.log
+
+# OpenCV-generated files (if any)
+*.avi
+*.mp4
+*.jpg
+*.png
+
+# Compiled C extensions
+*.so
+
+# Backup files
+*~
+*.bak
+*.swp
